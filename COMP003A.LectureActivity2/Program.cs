@@ -13,8 +13,8 @@
             string second = Console.ReadLine();
 
 
-            var dfirst = double.Parse(first);
-            var dsecond = double.Parse(second);
+            double dfirst = double.Parse(first);
+            double dsecond = double.Parse(second);
 
             var sum = dfirst + dsecond;
             Console.WriteLine("Sum: " + sum);
@@ -26,8 +26,8 @@
 
             bool greater = dfirst > dsecond;
             bool notEqual = dfirst != dsecond;
-            Console.WriteLine(greater);
-            Console.WriteLine(notEqual);
+            Console.WriteLine($"Is number 1 greater than number 2? " + greater);
+            Console.WriteLine($"Are these different numbers? " + notEqual);
         }
     }
 }
